@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <meta charset="UTF-8">
+
+        <title>Prototype</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Grupp C1">
+
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+        <!-- Internet Explorer -->
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="mapplic/mapplic-ie.css">
+            <script type="text/javascript" src="js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+    
+    <script>
+    function closep() {
+        window.location.reload();
+    }
+
+    </script>
+
+    <audio id="kung">
+          <source src="audio/kung.mp3">
+          <source src="audio/kung.ogg">
+    </audio>
+    <audio id="stadion">
+          <source src="audio/stadion.mp3">
+          <source src="audio/stadion.ogg">
+    </audio>
+
+<div id="container">
+
+    <div class="Bullet_Container">
+        <div onClick="document.getElementById('kung').play()" class="SC_Bullet bullet_1" data-showcase='{ 
+                    "coords" : "74%,45",
+                    "flicker_time":"2500,500",
+                    "flicker_size":4.0,
+                    "flicker_opacity":"0.5,1",
+                    "flicker_color":"#0072bc,#0072bc",
+                    "flicker_image":"img/icon.png",
+                    "border_radius":"0,0",
+                    "border_size":"0,0",
+                    "tooltip_offset":"-37,38",
+                    "tooltip_close" : "hover",
+                    "panel_coords" : "10,50" }'>
+        </div>
+        <div class="SC_Tooltip tooltip">   
+            <p>Kungsträdgården</p>
+        </div>
+        <div class="SC_Panel panel">
+            <div class="popup_content">
+                <iframe src="kung.html" width="100%" height="700px" frameBorder="0"></iframe>
+            </div>
+            <div class="popup_footer">
+                <div class="nav">
+                <p><a href="#" class="" onClick="window.location.reload()"><img src="img/close.png"/></p></a>
+                <p class="SC_Next"><img src="img/tc_next.png">Station</p>
+                </div>
+            </div>
+        </div>   
+
+ <div class="SC_Bullet bullet_2" data-showcase='{ 
+                    "coords" : "69%,43",
+                    "flicker_time":"2500,500",
+                    "flicker_size":4.0,
+                    "flicker_opacity":"0.5,1",
+                    "flicker_color":"#000000,#000000",
+                   "flicker_image":"img/icon.png",
+                    "border_radius":"500,700",
+                    "border_size":"0,0",
+                    "tooltip_offset":"-37,38",
+                    "tooltip_close" : "hover",
+                    "panel_coords" : "10,50" }'>
+        </div>
+        <div class="SC_Tooltip tooltip">    
+            <p>T-Centralen</p>
+        </div>
+        <div class="SC_Panel panel">
+            <div class="popup_content">
+                <iframe src="tc.html" width="100%" height="700px" frameBorder="0"></iframe>
+            </div>
+            <div class="popup_footer">
+                <div class="nav">
+                <p><a href="#" class="" onClick="window.location.reload()"><img src="img/close.png"/></p></a>
+                <p class="SC_Next"><img src="img/tekniska_next.png">Station</p>
+                <p onClick="document.getElementById('kung').play()" class="SC_Prev"><img src="img/kung_prev.png">Station</p>
+                </div>
+            </div>
+        </div>   
+              
+<div class="SC_Bullet bullet_3" data-showcase='{ 
+                    "coords" : "70%,36",
+                    "flicker_time":"2500,500",
+                    "flicker_size":4.0,
+                    "flicker_opacity":"0.5,1",
+                    "flicker_color":"#bc0004,#bc0004",
+                    "flicker_image":"img/icon.png",
+                    "border_radius":"500,700",
+                    "border_size":"0,0",
+                    "tooltip_offset":"-37,38",
+                    "tooltip_close" : "hover",
+                    "panel_coords" : "10,50" }'>
+        </div>
+        <div class="SC_Tooltip tooltip">    
+            <p>Tekniska Högskolan</p>
+        </div>
+        <div class="SC_Panel panel">
+            <div class="popup_content">
+                <iframe src="tekniska.html" width="100%" height="700px" frameBorder="0"></iframe>       
+            </div>
+            <div class="popup_footer">
+                <div class="nav">
+                <p><a href="#" class="" onClick="window.location.reload()"><img src="img/close.png"/></p></a>
+                <p onClick="document.getElementById('stadion').play()" class="SC_Next"><img src="img/stadion_next.png">Station</p>  
+                <p class="SC_Prev"><img src="img/tc_prev.png">Station</p>                  
+                </div>
+            </div>
+        </div>  
+
+<div onClick="document.getElementById('stadion').play()" class="SC_Bullet bullet_4" data-showcase='{ 
+                    "coords" : "74%,39",
+                    "flicker_time":"2500,500",
+                    "flicker_size":4.0,
+                    "flicker_opacity":"0.5,1",
+                    "flicker_color":"#bc0004,#bc0004",
+                    "flicker_image":"img/icon.png",
+                    "border_radius":"500,700",
+                    "border_size":"0,0",
+                    "tooltip_offset":"-37,38",
+                    "tooltip_close" : "hover",
+                    "panel_coords" : "10,50" }'>
+        </div>
+        <div class="SC_Tooltip tooltip">    
+            <p>Stadion</p>
+        </div>
+        <div class="SC_Panel panel">
+            <div class="popup_content">
+                <iframe src="stadion.html" width="100%" height="700px" frameBorder="0"></iframe>
+            </div>
+            <div class="popup_footer">
+                <div class="nav">
+                <p><a href="#" class="" onClick="window.location.reload()"><img src="img/close.png"/></p></a>
+                <p class="SC_Next"><img src="img/hogdalen_next.png">Station</p>   
+                <p class="SC_Prev"><img src="img/tekniska_prev.png">Station</p>                    
+                </div>
+            </div>
+        </div>  
+
+<div class="SC_Bullet bullet_5" data-showcase='{ 
+                    "coords" : "65%,78",
+                    "flicker_time":"2500,500",
+                    "flicker_size":4.0,
+                    "flicker_opacity":"0.5,1",
+                    "flicker_color":"#007e01,#007e01",
+                    "flicker_image":"img/icon.png",
+                    "border_radius":"500,700",
+                    "border_size":"0,0",
+                    "tooltip_offset":"-37,38",
+                    "tooltip_close" : "hover",
+                    "panel_coords" : "10,50" }'>
+        </div>
+        <div class="SC_Tooltip tooltip">    
+            <p>Högdalen</p></div>
+        <div class="SC_Panel panel">
+            <div class="popup_content">
+                <iframe src="hogdalen.html" width="100%" height="700px" frameBorder="0"></iframe>
+            </div>
+            <div class="popup_footer">
+                <div class="nav">
+                <p><a href="#" class="" onClick="window.location.reload()"><img src="img/close.png"/></p></a>
+                <p class="SC_Prev"><img src="img/stadion_prev.png">Station</p>                    
+                </div>
+            </div>
+        </div>  
+                   
+    </div>
+
+    <div id="content">
+        <object class="tree" data="metro_map.svg"  type="image/svg+xml" >
+            <embed class="tree" src="metro_map.svg"  type="image/svg+xml" />
+        </object>
+
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-showcase-2.2.min.js"></script>
+
+<script type="text/javascript">
+(function($){  //This functions first parameter is named $
+   $(window).load(function(){
+        $('#container').ShowCase();
+   })
+})(jQuery);  
+
+ (function($){   jQuery.fn.mouseIsOver = function () {
+    if($(this[0]).is(":hover"))
+    {
+        return true;
+    }
+    return false;
+}; })(jQuery); 
+
+ (function($){   setInterval(function(){
+    var $bullet1 = $(".bullet_1");
+    var $bullet2 = $(".bullet_2");
+    var $bullet3 = $(".bullet_3");
+    var $bullet4 = $(".bullet_4");
+    var $bullet5 = $(".bullet_5");
+
+    if($bullet1.mouseIsOver()) {
+       $bullet1.css("background-image", "url(img/icon_big.png)");
+    }
+    else if ($bullet2.mouseIsOver()) {
+        $bullet2.css("background-image", "url(img/icon_big.png)");
+    } 
+    else if ($bullet3.mouseIsOver()) {
+        $bullet3.css("background-image", "url(img/icon_big.png)");
+    } 
+    else if ($bullet4.mouseIsOver()) {
+        $bullet4.css("background-image", "url(img/icon_big.png)");
+    } 
+    else if ($bullet5.mouseIsOver()) {
+        $bullet5.css("background-image", "url(img/icon_big.png)");
+    } else {
+       $bullet1.css("background-image", "url(img/icon.png)");
+       $bullet2.css("background-image", "url(img/icon.png)");
+       $bullet3.css("background-image", "url(img/icon.png)");
+       $bullet4.css("background-image", "url(img/icon.png)");
+       $bullet5.css("background-image", "url(img/icon.png)");
+    }
+}, 200);})(jQuery); 
+</script>
+
+</body>
+</html>

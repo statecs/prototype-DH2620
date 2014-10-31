@@ -1,0 +1,64 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Kristineberg</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300' rel='stylesheet' type='text/css'>
+
+
+   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/hammer.min.js"></script>
+
+    <script src="js/hammer.jquery.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+
+
+    <link href="layout.css" rel="stylesheet" />
+
+    <script src="js/sliding.js"></script>
+    <script src="js/itemslide.min.js"></script>
+</head>
+
+<body>
+
+
+    <div id="scrolling" align="center">
+        <ul>
+            <li><span id="touse"> <img src="img/5/01.jpg"/></span></li>
+            <li><span id="touse"> <img src="img/5/02.jpg"/></span></li>
+            <li><span id="touse">  <img src="img/5/03.jpg"/></span></li>
+            <li><span id="touse"> <img src="img/5/04.jpg"/></span></li>
+
+        </ul>
+    </div>
+
+<div id="divider" /> 
+
+    <div id="footer" align="center">   
+
+    <img class="image" src="img/5/station_img.jpg" /> 
+
+    <div id="docsbuttons">
+
+
+            <a href="#" class="nav" onClick="$('ul').previous()"><img src="img/prev.png"/></a>
+
+            <span onclick="$('ul').gotoSlide(0)"><img src="img/5/01.jpg"/></span> &nbsp; 
+
+            <span onclick="$('ul').gotoSlide(1)"><img src="img/5/02.jpg"/></span> &nbsp; 
+
+            <span onclick="$('ul').gotoSlide(2)"><img src="img/5/03.jpg"/></span> &nbsp; 
+
+            <span onclick="$('ul').gotoSlide(3)"><img src="img/5/04.jpg"/></span> &nbsp; 
+
+            <a href="#" class="nav" onClick="$('ul').next()"><img src="img/next.png"/></a>
+
+            
+        </div>
+        
+    </div>
+</body>
+
+</html>
