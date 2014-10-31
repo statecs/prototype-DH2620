@@ -13,7 +13,6 @@
 
         <!-- Internet Explorer -->
         <!--[if lt IE 9]>
-            <link rel="stylesheet" type="text/css" href="mapplic/mapplic-ie.css">
             <script type="text/javascript" src="js/html5shiv.js"></script>
         <![endif]-->
     </head>
@@ -38,21 +37,109 @@
 <div id="container">
 
     <div class="Bullet_Container">
+
+    <!-- Each Bullet can pulse/Flicker at different speeds and configurations. To enable flickering use: 
+        "flicker" : true
+       
+        You can control the Speed and Delay of the Bullet Flicker. The Delay will create a pause between each Flicker. To set the speed to 2000 milliseconds (2 seconds) and the Delay to 500 milliseconds (0.5 seconds), use: 
+        "flicker_time" : "2000,500"
+       
+        You can apply CSS3 easing to the Flicker Animation using: 
+        "flicker_effect" : "ease-in-out"
+
+        Bullet Sizes can be animated using the flicker_size property. This setting uses a factor of the current size to determine the new size to animate to. For example, to animate the Bullet from it's current size to double it's current size, use: 
+        "flicker_size" : 2
+
+        To animate the Bullet Opacity from 25% to 100%, use: 
+        "flicker_opacity" : "0.25,1"
+
+        To animate the Bullet Color from Black to White, use: 
+        "flicker_color" : "#000000,#FFFFFF"
+
+        You can use an image for the Bullet using the flicker_image setting. Make sure your dimensions in the Bullet style are correct. 
+        "flicker_image" : "path/to/bullet_image.png"
+
+        To animate the Border Radius from 10 to 100, use: 
+        "border_radius" : "10,100"
+
+        To animate the Border Size from 1 to 100, use: 
+        "border_size" : "1,100"
+
+        To animate the Border Color from Black to White, use: 
+        "border_color" : "#000000,#FFFFFF"
+
+        Tooltips are positioned based on where the Bullet is. So, if the Bullet is moving along a Path, the Tooltip will open wherever the Bullet is. To offset the Tooltip position 20 to right of the Bullet and 50 down from the Bullet, use: 
+        "tooltip_offset" : "20,50"
+
+        To have the tooltip open in 1000ms and close in 500ms, use: 
+        "tooltip_speed" : "1000,500"
+
+        To have the tooltip open with an easing effect of 'ease' and close with 'ease-out', use: 
+        "tooltip_effect" : "ease, ease-out"
+
+        You can close the tooltip when the user mouses out (hover), or when they click on the tooltip. 
+        "tooltip_close" : "click"
+
+        When the user hovers a Bullet, the Tooltip appears. When they click the Tooltip, the Panel appears. All of the Bullets will still be visible, however you can hide all Bullets except for the Bullet associated with the current Panel, using: 
+        "hideBullets" : true
+
+        To set the animation speed of the Panel to 500ms in and 1000ms out, use: 
+        "panel_speed" : "500,1000"
+
+        To set the easing of the Panel in to 'ease' and out to 'ease-out', use: 
+        "panel_effect" : "ease,ease-out"
+
+        You can position the Panel the same way you position Bullets. To position a Panel at 10% over and 50% down from the top left corner of your Showcase, use: 
+        "panel_coords" : "10,50"
+
+
+        // Advanced controls //
+
+        Advanced Path movements are optional. Bullet positioning uses percentages of the total size of your Showcase. If the Bullet isn't moving vertically, it means you need to provide a height to your Showcase. To position a Bullet 10% in from the left and 50% down, use:
+        "coords" : "10,50"
+
+        The above works the same as CSS left and top properties, respectively. Negative values are supported. You can extend this and make your Bullet move along a Path. With paths, the above settings sets your Bullet in the starting position. To start at 10%,50% then move to 100%,20% - then move to 30%,50%, use:
+        "path" : "100,20 || 30,50"
+
+        Coordinate sets are separated using ||. The Bullet will start at the "coords" position, and if the "path" setting is supplied it will animate through the Coordinate points in the "path" setting. Each point in the path can have a unique speed and delay. The above example has 3 points.
+        "path_time" : "1000,0 || 500,2000 || 1500,3000"
+
+        The "path_time" setting accepts 2 values the Speed and Delay. Similar to the "path" setting, values for each point along the path are separated using ||. The first point ("coords" : "10%,50%") will now have a Speed of 1000ms and a delay of 0. The second point (100%,20%) will have speed of 500ms and a delay of 2000ms. And the last point (30%,50%) will have a speed of 1500ms and a delay of 3000ms.!!Each Path Point must have a defined Speed and Delay!!
+        Once your path is setup, you can easily create a loop, by setting the last path position to return home: 
+        "path" : "100,20 || 30,50" || "10,50"
+
+        then enable looping with: 
+        "loop_path" : true
+
+        You can create auto-popup Tooltips for your Path movement using the "path_tip" setting. This setting accepts an ID to a pre-designed tooltip. For example, using the looped path we created above, we can halt path movement on the second position and popup a tooltip with the ID of "tooltip_for_bullet_2", using: 
+        "path_tip" : "false, tooltip_for_bullet_2, false"
+
+        All you need to do is style a little Tooltip however you like, give it a specific ID and pass it into the corresponding position inside the "path_tip" setting. Showcase will automatically position it based on the position of your Bullet. To offset it 20 to the right and up 30 use: 
+        "path_tip_offset" : "0,0 || 20,-30 || 0,0"
+
+        Bullets colors are set using the "flicker_color" setting, however you can convert that into an animated gradient. To set the background size of the gradient to 50% width and 100% height, use: 
+        "flicker_gradient" : "50,100"
+
+        You can also set the gradient stops using: 
+        "gradient_points" : "40,90"
+    -->
+
+      <!-- KUNGTRÄDGÅRDEN -->
         <div onClick="document.getElementById('kung').play()" class="SC_Bullet bullet_1" data-showcase='{ 
-                    "coords" : "74%,45",
-                    "flicker_time":"2500,500",
-                    "flicker_size":4.0,
+                    "coords" : "74%,45.7",
+                    "flicker_time":"1000,500",
+                    "flicker_size":2.0,
                     "flicker_opacity":"0.5,1",
                     "flicker_color":"#0072bc,#0072bc",
-                    "flicker_image":"img/icon.png",
+                    "flicker_image":"img/icon_bla.png",
                     "border_radius":"0,0",
                     "border_size":"0,0",
                     "tooltip_offset":"-37,38",
                     "tooltip_close" : "hover",
                     "panel_coords" : "10,50" }'>
         </div>
-        <div class="SC_Tooltip tooltip">   
-            <p>Kungsträdgården</p>
+       <div class="SC_Tooltip">   
+            <p></p>
         </div>
         <div class="SC_Panel panel">
             <div class="popup_content">
@@ -65,22 +152,22 @@
                 </div>
             </div>
         </div>   
-
+  <!-- T-CENTRALEN -->
  <div class="SC_Bullet bullet_2" data-showcase='{ 
-                    "coords" : "69%,43",
-                    "flicker_time":"2500,500",
-                    "flicker_size":4.0,
+                    "coords" : "71%,45",
+                    "flicker_time":"1000,500",
+                    "flicker_size":2.0,
                     "flicker_opacity":"0.5,1",
                     "flicker_color":"#000000,#000000",
-                   "flicker_image":"img/icon.png",
+                   "flicker_image":"icon_bla.png",
                     "border_radius":"500,700",
                     "border_size":"0,0",
                     "tooltip_offset":"-37,38",
                     "tooltip_close" : "hover",
                     "panel_coords" : "10,50" }'>
         </div>
-        <div class="SC_Tooltip tooltip">    
-            <p>T-Centralen</p>
+        <div class="SC_Tooltip">    
+            <p></p>
         </div>
         <div class="SC_Panel panel">
             <div class="popup_content">
@@ -95,21 +182,22 @@
             </div>
         </div>   
               
+              <!-- TEKNISKA HÖGSKOLAN -->
 <div class="SC_Bullet bullet_3" data-showcase='{ 
-                    "coords" : "70%,36",
-                    "flicker_time":"2500,500",
-                    "flicker_size":4.0,
+                    "coords" : "72%,37.5",
+                    "flicker_time":"1000,500",
+                    "flicker_size":2.0,
                     "flicker_opacity":"0.5,1",
                     "flicker_color":"#bc0004,#bc0004",
-                    "flicker_image":"img/icon.png",
+                    "flicker_image":"img/icon_rod.png",
                     "border_radius":"500,700",
                     "border_size":"0,0",
                     "tooltip_offset":"-37,38",
                     "tooltip_close" : "hover",
                     "panel_coords" : "10,50" }'>
         </div>
-        <div class="SC_Tooltip tooltip">    
-            <p>Tekniska Högskolan</p>
+        <div class="SC_Tooltip">    
+            <p></p>
         </div>
         <div class="SC_Panel panel">
             <div class="popup_content">
@@ -124,21 +212,22 @@
             </div>
         </div>  
 
+ <!-- STADION -->
 <div onClick="document.getElementById('stadion').play()" class="SC_Bullet bullet_4" data-showcase='{ 
-                    "coords" : "74%,39",
-                    "flicker_time":"2500,500",
-                    "flicker_size":4.0,
+                    "coords" : "75.4%,40",
+                    "flicker_time":"1000,500",
+                    "flicker_size":2.0,
                     "flicker_opacity":"0.5,1",
                     "flicker_color":"#bc0004,#bc0004",
-                    "flicker_image":"img/icon.png",
+                    "flicker_image":"img/icon_rod.png",
                     "border_radius":"500,700",
                     "border_size":"0,0",
                     "tooltip_offset":"-37,38",
                     "tooltip_close" : "hover",
                     "panel_coords" : "10,50" }'>
         </div>
-        <div class="SC_Tooltip tooltip">    
-            <p>Stadion</p>
+        <div class="SC_Tooltip">    
+            <p></p>
         </div>
         <div class="SC_Panel panel">
             <div class="popup_content">
@@ -152,22 +241,23 @@
                 </div>
             </div>
         </div>  
-
+ <!-- HÖGDALEN -->
 <div class="SC_Bullet bullet_5" data-showcase='{ 
-                    "coords" : "65%,78",
-                    "flicker_time":"2500,500",
-                    "flicker_size":4.0,
+                    "coords" : "66.5%,79",
+                    "flicker_time":"1000,500",
+                    "flicker_size":2.0,
                     "flicker_opacity":"0.5,1",
                     "flicker_color":"#007e01,#007e01",
-                    "flicker_image":"img/icon.png",
+                    "flicker_image":"img/icon_gron.png",
                     "border_radius":"500,700",
                     "border_size":"0,0",
                     "tooltip_offset":"-37,38",
                     "tooltip_close" : "hover",
                     "panel_coords" : "10,50" }'>
         </div>
-        <div class="SC_Tooltip tooltip">    
-            <p>Högdalen</p></div>
+        <div class="SC_Tooltip">    
+            <p></p>
+        </div>
         <div class="SC_Panel panel">
             <div class="popup_content">
                 <iframe src="hogdalen.html" width="100%" height="700px" frameBorder="0"></iframe>
@@ -217,25 +307,25 @@
     var $bullet5 = $(".bullet_5");
 
     if($bullet1.mouseIsOver()) {
-       $bullet1.css("background-image", "url(img/icon_big.png)");
+       $bullet1.css("background-image", "url(img/icon_big_bla.png)");
     }
     else if ($bullet2.mouseIsOver()) {
-        $bullet2.css("background-image", "url(img/icon_big.png)");
+        $bullet2.css("background-image", "url(img/icon_big_bla.png)");
     } 
     else if ($bullet3.mouseIsOver()) {
-        $bullet3.css("background-image", "url(img/icon_big.png)");
+        $bullet3.css("background-image", "url(img/icon_big_rod.png)");
     } 
     else if ($bullet4.mouseIsOver()) {
-        $bullet4.css("background-image", "url(img/icon_big.png)");
+        $bullet4.css("background-image", "url(img/icon_big_rod.png)");
     } 
     else if ($bullet5.mouseIsOver()) {
-        $bullet5.css("background-image", "url(img/icon_big.png)");
+        $bullet5.css("background-image", "url(img/icon_big_gron.png)");
     } else {
-       $bullet1.css("background-image", "url(img/icon.png)");
-       $bullet2.css("background-image", "url(img/icon.png)");
-       $bullet3.css("background-image", "url(img/icon.png)");
-       $bullet4.css("background-image", "url(img/icon.png)");
-       $bullet5.css("background-image", "url(img/icon.png)");
+       $bullet1.css("background-image", "url(img/icon_bla.png)");
+       $bullet2.css("background-image", "url(img/icon_bla.png)");
+       $bullet3.css("background-image", "url(img/icon_rod.png)");
+       $bullet4.css("background-image", "url(img/icon_rod.png)");
+       $bullet5.css("background-image", "url(img/icon_gron.png)");
     }
 }, 200);})(jQuery); 
 </script>
