@@ -9,7 +9,7 @@ DH2620 - Human Computer Interaction
 * CSS3<br />
 * JQuery<br />
 
-![alt tag](https://raw.github.com/statecs/protoype-html5/master/start.png)
+![alt tag](https://raw.githubusercontent.com/statecs/prototype-html5/master/start.png)
 
 Licence
 ==============================
