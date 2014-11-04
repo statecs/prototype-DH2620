@@ -3,7 +3,7 @@ DH2620 - Human Computer Interaction
 ==============================
 
  * Group C1 - Prototype
- * Initial version: 0.1
+ * Version: 0.3
 
 * HTML5<br />
 * CSS3<br />
