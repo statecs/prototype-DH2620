@@ -3,7 +3,8 @@ $(document).ready(function (){
 	$("ul").initslide(
         {
             /* disable_slide:true*/
-            duration:1500
+            duration:1500,
+            start:1
         }
     );//initialize itemslide
 
