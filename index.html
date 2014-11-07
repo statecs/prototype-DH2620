@@ -15,15 +15,15 @@
         <!--[if lt IE 9]>
             <script type="text/javascript" src="js/html5shiv.js"></script>
         <![endif]-->
+
+
     </head>
   <body>
-    
+
     <script>
     function closep() {
         window.location.reload();
     }
-    
-
 
     </script>
 
@@ -43,6 +43,11 @@
           <source src="audio/tekniska.mp3">
           <source src="audio/tekniska.ogg">
     </audio>
+
+<iframe id="targetFrame" src="" width="100%" height="auto" frameBorder="0"></iframe>
+
+
+
 
 <div id="container">
 
@@ -135,7 +140,7 @@
     -->
 
 <!-- KUNGSTRÄDGÅRDEN -->
-        <div onClick="document.getElementById('kung').play()" class="SC_Bullet bullet_1" data-showcase='{ 
+        <div id="click1" title="Kungsträdgården" alt="Kungsträdgården"  class="SC_Bullet bullet_1" data-showcase='{ 
                     "coords" : "74%,45.7",
                     "flicker_time":"1000,500",
                     "flicker_size":2.0,
@@ -152,19 +157,53 @@
             <p></p>
         </div>
         <div class="SC_Panel panel">
+
             <div class="popup_content">
-                <iframe src="1.html" width="100%" height="700px" frameBorder="0"></iframe>
-            </div>
-            <div class="popup_footer">
-                <div class="nav">
-                <p><a href="#" class="" onClick="window.location.reload()"><img src="img/close.png"/></p></a>
-                <p class="SC_Next"><img src="img/2/next.png">Station</p>
-                </div>
-            </div>
+               
+         
+          
+             <div id="footer" align="center">   
+
+   <!-- <img class="imagesrc" src="img/1/station_img.jpg" /> -->
+
+    <div id="docsbuttons">
+
+            <a class="nav" onClick="document.getElementById('targetFrame').contentWindow.$('ul').previous();"><img src="img/prev.png"/></a>
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(0);"><img src="img/1/01.jpg"/></span> &nbsp; 
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(1);"><img src="img/1/02.jpg"/></span> &nbsp; 
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(2);"><img src="img/1/03.jpg"/></span> &nbsp; 
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(3);"><img src="img/1/04.jpg"/></span> &nbsp; 
+
+            <a class="nav" onClick="document.getElementById('targetFrame').contentWindow.$('ul').next();"><img src="img/next.png"/></a>
+
+    </div><br />
+
+
+        <div id="footer_btn">
+            <img src="img/1/station_img_1.jpg" alt="" usemap="#logos1" />
+
+            <map name="logos1">
+            <area  href="javascript:void(0);" shape="circle" coords="119,107,33" onClick="document.getElementById('tc').play()" id="click2" class="SC_Next" title="T-Centralen" alt="T-Centralen" />
+            <area  href="javascript:void(0);" shape="circle" coords="199,107,33" id="click1" title="Kungsträdgården" alt="Kungsträdgården" />
+            <area shape="default" nohref="nohref" title="Default" alt="Default"/>
+            </map>
+
+
+ 
+            <a href="#" id='clickclose' class="" onClick="window.location.reload()"><img src="img/close.png"/></a> 
+        </div>
+               
+        </div>
+             </div>  
+        
         </div>   
 
   <!-- T-CENTRALEN -->
- <div onClick="document.getElementById('tc').play()" class="SC_Bullet bullet_2" data-showcase='{ 
+ <div id="click2" title="T-Centralen" alt="T-Centralen" class="SC_Bullet bullet_2" data-showcase='{ 
                     "coords" : "71%,45",
                     "flicker_time":"1000,500",
                     "flicker_size":2.0,
@@ -182,49 +221,51 @@
         </div>
         <div class="SC_Panel panel">
             <div class="popup_content">
-                <iframe src="2.html" width="100%" height="700px" frameBorder="0"></iframe>
-            </div>
-            <div class="popup_footer">
-                <div class="nav">
-                <p><a href="#" class="" onClick="window.location.reload()"><img src="img/close.png"/></p></a>
-                <p class="SC_Next"><img src="img/3/next.png">Station</p>
-                <p class="SC_Prev"><img src="img/1/prev.png">Station</p>
-                </div>
-            </div>
-        </div>   
-              
-<!-- TEKNISKA HÖGSKOLAN -->
-<div onClick="document.getElementById('tekniska').play()" class="SC_Bullet bullet_3" data-showcase='{ 
-                    "coords" : "72%,37.5",
-                    "flicker_time":"1000,500",
-                    "flicker_size":2.0,
-                    "flicker_opacity":"0.5,1",
-                    "flicker_color":"#bc0004,#bc0004",
-                    "flicker_image":"img/icon_rod.png",
-                    "border_radius":"500,700",
-                    "border_size":"0,0",
-                    "tooltip_offset":"-37,38",
-                    "tooltip_close" : "hover",
-                    "panel_coords" : "10,50" }'>
-        </div>
-        <div class="SC_Tooltip">    
-            <p></p>
-        </div>
-        <div class="SC_Panel panel">
-            <div class="popup_content">
-                <iframe src="3.html" width="100%" height="700px" frameBorder="0"></iframe>       
-            </div>
-            <div class="popup_footer">
-                <div class="nav">
-                <p><a href="#" class="" onClick="window.location.reload()"><img src="img/close.png"/></p></a>
-                <p class="SC_Next"><img src="img/4/next.png">Station</p>  
-                <p class="SC_Prev"><img src="img/2/prev.png">Station</p>                  
-                </div>
-            </div>
-        </div>  
+          
+             <div id="footer" align="center">   
 
- <!-- STADION -->
-<div onClick="document.getElementById('stadion').play()" class="SC_Bullet bullet_4" data-showcase='{ 
+   <!-- <img class="imagesrc" src="img/1/station_img.jpg" /> -->
+
+    <div id="docsbuttons">
+
+            <a class="nav" onClick="document.getElementById('targetFrame').contentWindow.$('ul').previous();"><img src="img/prev.png"/></a>
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(0);"><img src="img/2/01.jpg"/></span> &nbsp; 
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(1);"><img src="img/2/02.jpg"/></span> &nbsp; 
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(2);"><img src="img/2/03.jpg"/></span> &nbsp; 
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(3);"><img src="img/2/04.jpg"/></span> &nbsp; 
+
+            <a class="nav" onClick="document.getElementById('targetFrame').contentWindow.$('ul').next();"><img src="img/next.png"/></a>
+
+    </div><br />
+
+
+        <div id="footer_btn">
+            <img src="img/2/station_img_1.jpg" alt="" usemap="#logos2" />
+
+            <map name="logos2">
+            <area  href="javascript:void(0);" shape="circle" coords="119,107,33" id="click2" title="T-Centralen" alt="T-Centralen" />
+            <area  href="javascript:void(0);" shape="circle" coords="199,107,33" onClick="document.getElementById('kung').play()" id="click1" class="SC_Prev" title="Kungsträdgården" alt="Kungsträdgården" />
+            <area shape="default" nohref="nohref" title="Default" alt="Default"/>
+            </map>
+
+
+ 
+            <a id='clickclose' class="" onClick="window.location.reload()"><img src="img/close.png"/></a> 
+        </div>
+               
+        </div>
+             </div>  
+        
+        </div>   
+
+              
+
+<!-- STADION -->
+<div id="click3" title="Stadion" alt="Stadion" class="SC_Bullet bullet_4" data-showcase='{ 
                     "coords" : "75.4%,40",
                     "flicker_time":"1000,500",
                     "flicker_size":2.0,
@@ -241,19 +282,113 @@
             <p></p>
         </div>
         <div class="SC_Panel panel">
-            <div class="popup_content">
-                <iframe src="4.html" width="100%" height="700px" frameBorder="0"></iframe>
-            </div>
-            <div class="popup_footer">
-                <div class="nav">
-                <p><a href="#" class="" onClick="window.location.reload()"><img src="img/close.png"/></p></a>
-                <p class="SC_Next"><img src="img/5/next.png">Station</p>   
-                <p class="SC_Prev"><img src="img/3/prev.png">Station</p>                    
-                </div>
-            </div>
-        </div>  
+             <div class="popup_content">
+               
+         
+          
+             <div id="footer" align="center">   
+
+   <!-- <img class="imagesrc" src="img/1/station_img.jpg" /> -->
+
+    <div id="docsbuttons">
+
+            <a class="nav" onClick="document.getElementById('targetFrame').contentWindow.$('ul').previous();"><img src="img/prev.png"/></a>
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(0);"><img src="img/3/01.jpg"/></span> &nbsp; 
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(1);"><img src="img/3/02.jpg"/></span> &nbsp; 
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(2);"><img src="img/3/03.jpg"/></span> &nbsp; 
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(3);"><img src="img/3/04.jpg"/></span> &nbsp; 
+
+            <a class="nav" onClick="document.getElementById('targetFrame').contentWindow.$('ul').next();"><img src="img/next.png"/></a>
+
+    </div><br />
+
+
+        <div id="footer_btn">
+            <img src="img/3/station_img_1.jpg" alt="" usemap="#logos3" />
+
+            <map name="logos3">
+            <area  href="javascript:void(0);" shape="circle" coords="119,107,33" onClick="document.getElementById('tekniska').play()" id="click4" class="SC_Next" title="Tekniska Högskolan" alt="Tekniska Högskolan" />
+            <area  href="javascript:void(0);" shape="circle" coords="199,107,33" id="click3" title="Stadion" alt="Stadion" />
+            <area shape="default" nohref="nohref" title="Default" alt="Default"/>
+            </map>
+
+
+ 
+            <a id='clickclose' class="" onClick="window.location.reload()"><img src="img/close.png"/></a> 
+        </div>
+               
+        </div>
+             </div>  
+        
+        </div>   
+
+ <!-- TEKNISKA HÖGSKOLAN-->
+<div id="click4" title="Tekniska Högskolan" alt="Tekniska Högskolan" class="SC_Bullet bullet_3" data-showcase='{ 
+                    "coords" : "72%,37.5",
+                    "flicker_time":"1000,500",
+                    "flicker_size":2.0,
+                    "flicker_opacity":"0.5,1",
+                    "flicker_color":"#bc0004,#bc0004",
+                    "flicker_image":"img/icon_rod.png",
+                    "border_radius":"500,700",
+                    "border_size":"0,0",
+                    "tooltip_offset":"-37,38",
+                    "tooltip_close" : "hover",
+                    "panel_coords" : "10,50" }'>
+        </div>
+        <div class="SC_Tooltip">    
+            <p></p>
+        </div>
+        <div class="SC_Panel panel">
+             <div class="popup_content">
+               
+         
+          
+             <div id="footer" align="center">   
+
+   <!-- <img class="imagesrc" src="img/1/station_img.jpg" /> -->
+
+    <div id="docsbuttons">
+
+            <a class="nav" onClick="document.getElementById('targetFrame').contentWindow.$('ul').previous();"><img src="img/prev.png"/></a>
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(0);"><img src="img/4/01.jpg"/></span> &nbsp; 
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(1);"><img src="img/4/02.jpg"/></span> &nbsp; 
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(2);"><img src="img/4/03.jpg"/></span> &nbsp; 
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(3);"><img src="img/4/04.jpg"/></span> &nbsp; 
+
+            <a class="nav" onClick="document.getElementById('targetFrame').contentWindow.$('ul').next();"><img src="img/next.png"/></a>
+
+    </div><br />
+
+
+        <div id="footer_btn">
+            <img src="img/4/station_img_1.jpg" alt="" usemap="#logos4" />
+
+            <map name="logos4">
+            <area  href="javascript:void(0);" shape="circle" coords="119,107,33" id="click4" title="Tekniska Högskolan" alt="Tekniska Högskolan" />
+            <area  href="javascript:void(0);" shape="circle" coords="199,107,33" onClick="document.getElementById('stadion').play()" id="click3" class="SC_Prev" title="Stadion" alt="Stadion" />
+            <area shape="default" nohref="nohref" title="Default" alt="Default"/>
+            </map>
+
+
+ 
+            <a id='clickclose' class="" onClick="window.location.reload()"><img src="img/close.png"/></a> 
+        </div>
+               
+        </div>
+             </div>  
+        
+        </div> 
  <!-- HÖGDALEN -->
-<div class="SC_Bullet bullet_5" data-showcase='{ 
+<div id="click5" title="Högdalen" alt="Högdalen" class="SC_Bullet bullet_5" data-showcase='{ 
                     "coords" : "66.5%,79",
                     "flicker_time":"1000,500",
                     "flicker_size":2.0,
@@ -270,16 +405,48 @@
             <p></p>
         </div>
         <div class="SC_Panel panel">
-            <div class="popup_content">
-                <iframe src="5.html" width="100%" height="700px" frameBorder="0"></iframe>
-            </div>
-            <div class="popup_footer">
-                <div class="nav">
-                <p><a href="#" class="" onClick="window.location.reload()"><img src="img/close.png"/></p></a>
-                <p class="SC_Prev"><img src="img/4/prev.png">Station</p>                    
-                </div>
-            </div>
-        </div>  
+          <div class="popup_content">
+               
+         
+          
+             <div id="footer" align="center">   
+
+   <!-- <img class="imagesrc" src="img/1/station_img.jpg" /> -->
+
+    <div id="docsbuttons">
+
+            <a class="nav" onClick="document.getElementById('targetFrame').contentWindow.$('ul').previous();"><img src="img/prev.png"/></a>
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(0);"><img src="img/5/01.jpg"/></span> &nbsp; 
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(1);"><img src="img/5/02.jpg"/></span> &nbsp; 
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(2);"><img src="img/5/03.jpg"/></span> &nbsp; 
+
+            <span onclick="document.getElementById('targetFrame').contentWindow.$('ul').gotoSlide(3);"><img src="img/5/04.jpg"/></span> &nbsp; 
+
+            <a class="nav" onClick="document.getElementById('targetFrame').contentWindow.$('ul').next();"><img src="img/next.png"/></a>
+
+    </div><br />
+
+
+        <div id="footer_btn">
+            <img src="img/5/station_img_1.jpg" alt="" usemap="#logos4" />
+
+            <map name="logos4">
+            <area  href="javascript:void(0);" shape="circle" coords="119,107,33" id="click5" title="Högdalen" alt="Högdalen" />
+            <area shape="default" nohref="nohref" title="Default" alt="Default"/>
+            </map>
+
+
+ 
+            <a id='clickclose' class="" onClick="window.location.reload()"><img src="img/close.png"/></a> 
+        </div>
+               
+        </div>
+             </div>  
+        
+        </div>   
                    
     </div>
 
@@ -291,17 +458,124 @@
     </div>
 </div>
 
+ <!-- with document ready, most likely in the html head -->
+
+
+
 
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/jquery-showcase-2.2.min.js"></script>
 
+
 <script type="text/javascript">
 
- (function($){  
+/* $("#targetFrame", top.document).css({ height: 400 });*/
+ $("#targetFrame",window.document).height(0);
 
-  $('.bullet_5').on({ 'tap' : function(){ alert("Hello"); } });
+$(function(){
+    $('#targetFrame').load(function(){
+        $(this).show();
+        console.log('load the iframe')
+    });
 
-})(jQuery);  
+});
+ 
+
+ $("#kung,#tekniska,#tc,#stadion").on("play", function (me) {
+         jQuery('audio').each(function (i,e) {
+              if (e != me.currentTarget)
+              { 
+                  this.pause(); 
+              }
+         });
+ });
+
+
+
+ $( "div#click1" ).click(function() {
+        
+        $('#targetFrame').attr('src', '1.html'); 
+        $("#targetFrame",window.document).height(450);
+
+        if ($(".popup_content").is(":visible")){
+      document.getElementById('kung').play();
+  } else {
+       document.getElementById('kung').pause();
+
+}
+       
+});
+
+ $( "area#click1" ).click(function() {
+        
+        $('#targetFrame').attr('src', '1.html'); 
+});
+$( "div#click2" ).click(function() {
+        
+        $('#targetFrame').attr('src', '2.html'); 
+        $("#targetFrame",window.document).height(450);
+
+           if ($(".popup_content").is(":visible")){
+      document.getElementById('tc').play();
+  } else {
+       document.getElementById('tc').pause();
+
+}
+
+});
+$( "area#click2" ).click(function() {
+        
+        $('#targetFrame').attr('src', '2.html'); 
+});
+$( "div#click3" ).click(function() {
+        
+        $('#targetFrame').attr('src', '3.html'); 
+        $("#targetFrame",window.document).height(450);
+
+           if ($(".popup_content").is(":visible")){
+      document.getElementById('stadion').play();
+  } else {
+       document.getElementById('stadion').pause();
+
+}
+});
+$( "area#click3" ).click(function() {
+        
+        $('#targetFrame').attr('src', '3.html'); 
+});
+$( "div#click4" ).click(function() {
+        
+        $('#targetFrame').attr('src', '4.html'); 
+        $("#targetFrame",window.document).height(450);
+
+           if ($(".popup_content").is(":visible")){
+      document.getElementById('tekniska').play();
+  } else {
+       document.getElementById('tekniska').pause();
+
+}
+});
+$( "area#click4" ).click(function() {
+        
+        $('#targetFrame').attr('src', '4.html'); 
+});
+$( "div#click5" ).click(function() {
+        
+        $('#targetFrame').attr('src', '5.html'); 
+        $("#targetFrame",window.document).height(450);
+});
+$( "area#click5" ).click(function() {
+        
+        $('#targetFrame').attr('src', '5.html'); 
+});
+
+$( "#content" ).click(function() {
+        
+        $('#targetFrame').attr('src', ''); 
+
+
+});
+
 
 (function($){  //This functions first parameter is named $
    $(window).load(function(){
@@ -317,6 +591,31 @@
     return false;
 }; })(jQuery); 
 
+
+$('#content').click(function(){
+     $('audio').each(function() {
+     if(!this.paused){
+        this.pause();
+     }
+    });
+});
+
+
+
+ $( "#container" ).click(function() {
+$( ".bullet_1" ).css("background-image", "url(img/icon_bla.png)");
+$( ".bullet_2" ).css("background-image", "url(img/icon_bla.png)");
+$( ".bullet_3" ).css("background-image", "url(img/icon_rod.png)");
+$( ".bullet_4" ).css("background-image", "url(img/icon_rod.png)");
+$( ".bullet_5" ).css("background-image", "url(img/icon_gron.png)");
+});
+
+  $( "#content" ).click(function() {
+    
+$("#targetFrame",window.document).height(0);
+});
+
+
  (function($){   setInterval(function(){
     var $bullet1 = $(".bullet_1");
     var $bullet2 = $(".bullet_2");
@@ -326,7 +625,6 @@
 
     if($bullet1.mouseIsOver()) {
        $bullet1.css("background-image", "url(img/icon_big_bla.png)");
-       $bullet1.css("margin-right", "120px");
     }
     else if ($bullet2.mouseIsOver()) {
         $bullet2.css("background-image", "url(img/icon_big_bla.png)");
@@ -340,13 +638,31 @@
     else if ($bullet5.mouseIsOver()) {
         $bullet5.css("background-image", "url(img/icon_big_gron.png)");
     } else {
-       $bullet1.css("background-image", "url(img/icon_bla.png)");
+     /*  $bullet1.css("background-image", "url(img/icon_bla.png)");
        $bullet2.css("background-image", "url(img/icon_bla.png)");
        $bullet3.css("background-image", "url(img/icon_rod.png)");
        $bullet4.css("background-image", "url(img/icon_rod.png)");
-       $bullet5.css("background-image", "url(img/icon_gron.png)");
+       $bullet5.css("background-image", "url(img/icon_gron.png)");*/
     }
 }, 200);})(jQuery); 
+
+
+
+
+$('#remove').click(function() {
+  var clicks = $(this).data('clicks');
+  if (clicks) {
+     // odd clicks
+     $( "#container" ).slideDown();
+  } else {
+     // even clicks
+      $( "#container" ).slideUp();
+     
+  }
+  $(this).data("clicks", !clicks);
+});
+
+
 </script>
 
 </body>

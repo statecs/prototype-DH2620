@@ -4,7 +4,7 @@ $(document).ready(function (){
         {
             /* disable_slide:true*/
             duration:1500,
-            start:1
+            start:0
         }
     );//initialize itemslide
 
